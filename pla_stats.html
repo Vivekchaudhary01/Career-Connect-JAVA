@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Placement Statistics</title>
+  <link rel="stylesheet" href="stylenin.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .salary {
+      text-align: center;
+      display: inline-block;
+      width: 320px;
+      height: 200px;
+      margin: 10px;
+      border: 1px solid #ccc;
+    }
+
+    h3 {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      border-radius: 50%;
+      background-color: rgb(114, 210, 245);
+      margin: 20px 0;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .gallery div {
+      text-align: center;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>College Placement Statistics</h1>
+  </header>
+
+  <div class="container">
+    <h2 align="center">Placement Overview</h2>
+    <canvas id="placementChart" width="400" height="200"></canvas>
+    <hr>
+
+    <h2>Top Recruiters</h2>
+    <div class="gallery">
+      <div>
+        <img src="images/m.png" alt="Company 1 Logo" width="50px" height="50">
+        <p>Microsoft</p>
+      </div>
+      <div>
+        <img src="images/ama.png" alt="Company 2 Logo">
+        <p>Amazon</p>
+    </div>
+    <div>
+        <img src="images/tc.jpeg" alt="Company 2 Logo">
+        <p>TCS</p>
+    </div>
+     <div>
+        <img src="images/ad.jpg" alt="Company 2 Logo">
+        <p>ADOBE</p>
+    </div> 
+    <div>
+        <img src="images/g.jpg" alt="Company 2 Logo">
+        <p>Google</p>
+    </div>
+    <div>
+        <img src="images/Swiggy_logo.png" alt="Company 2 Logo">
+        <p>Swiggy</p>
+    </div>
+    <div>
+        <img src="images/Zomato_logo.png" alt="Company 2 Logo">
+        <p>Zomato</p>
+    </div>
+    <div>
+        <img src="images/x.jpg" alt="Company 2 Logo">
+        <p>X</p>
+    </div>
+    <div>
+        <img src="images/flip.jpeg" alt="Company 2 Logo">
+        <p>Flipkart</p>
+    </div>
+    <div>
+        <img src="images/icm.png" alt="Company 2 Logo">
+        <p>IBM</p>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="salary">
+      <h2>Average Salary Offered</h2>
+      <h3>15 LPA</h3>
+    </div>
+    
+    <div class="salary">
+      <h2>Highest Salary Offered</h2>
+      <h3>50 LPA</h3>
+    </div>
+    
+    <div class="salary">
+      <h2>Students Placed</h2>
+      <h3>5000+</h3>
+    </div>
+    
+    <div class="salary">
+      <h2>Companies Visited</h2>
+      <h3>150+</h3>
+    </div>
+  </div>
+
+  <script>
+    // Chart.js code for a simple line chart
+    var ctx = document.getElementById('placementChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022'],
+        datasets: [{
+          label: 'Number of Students Placed',
+          data: [150, 180, 200, 220, 250],
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 2,
+          fill: true,
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

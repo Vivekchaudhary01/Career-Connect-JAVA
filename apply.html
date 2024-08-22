@@ -1,0 +1,143 @@
+<html>
+<head>
+    <style>
+        * { 
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+
+        .nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav ul li {
+            font-size: 18px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav ul li a:hover {
+            color: #f00;
+        }
+
+        .main {
+            padding-left: 340px;
+            margin: 20px;
+        }
+
+        .form {
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px #999;
+            padding: 20px;
+        }
+
+        .form h2 {
+            font-size: 28px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .form p {
+            font-size: 16px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .form label {
+            display: block;
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .form input, .form select, .form textarea {
+            display: block;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .form input[type="submit"] {
+            background-color: #f00;
+            color: white;
+            cursor: pointer;
+        }
+
+        .form input[type="submit"]:hover {
+            background-color: #f33;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1></h1>
+        </div>
+        <div class="main">
+            <div class="form">
+                <h2>Application Form</h2>
+                <p>Please fill in the details below to apply for the campus drive.</p>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone" required>
+                    <label for="resume">Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message (optional)"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2023 Placement Cell. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

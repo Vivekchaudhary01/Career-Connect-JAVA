@@ -1,0 +1,172 @@
+/* style.css */
+
+/* General styles */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin: 10px;
+    background-color: #990000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+/* Paragraph styles */
+p {
+    text-align: justify;
+    font-size: 16px;
+    margin: 10px;
+    line-height: 1.5;
+}
+
+/* Image styles */
+img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery div {
+    margin: 10px;
+}
+
+.gallery div p {
+    text-align: center;
+}
+
+/* Form styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input, .form textarea, .form button {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.form input, .form textarea {
+    width: 300px;
+}
+
+.form button {
+    width: 100px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: green;
+}
+
+/* Calendar styles */
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calendar div {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+.cen{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+.calendar div h3 {
+    text-align: center;
+}
+
+.calendar div p {
+    text-align: justify;
+}
+
+.calendar div a {
+    display: block;
+    text-align: center;
+    color: blue;
+    text-decoration: none;
+}
+
+.calendar div a:hover {
+    color: green;
+}
+
+/* Awards styles */
+.awards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.awards div {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.awards div h3 {
+    text-align: center;
+}
+
+.awards div p {
+    text-align: justify;
+}
+
+.awards div a {
+    display: block;
+    text-align: center;
+    color: blue;
+    text-decoration: none;
+}
+
+.awards div a:hover {
+    color: green;
+}

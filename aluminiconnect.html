@@ -1,0 +1,216 @@
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        margin: 10px;
+        background-color: #990000;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px gray;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .question {
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .question-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .question-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .question-name {
+      font-weight: bold;
+      color: #333333;
+    }
+
+    .question-date {
+      font-size: 12px;
+      color: #999999;
+      margin-left: auto;
+    }
+
+    .question-body {
+      margin-top: 10px;
+      color: #333333;
+    }
+    .question-reply {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+      }
+      
+      .question-reply-button {
+        width: 80px;
+        height: 30px;
+        background-color: #333333;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+      }
+    .answer {
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      margin-left: 50px;
+    }
+
+    .answer-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .answer-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .answer-name {
+      font-weight: bold;
+      color: #333333;
+    }
+
+    .answer-date {
+      font-size: 12px;
+      color: #999999;
+      margin-left: auto;
+    }
+
+    .answer-body {
+      margin-top: 10px;
+      color: #333333;
+    }
+
+    .form {
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .form-input {
+      width: 100%;
+      height: 100px;
+      border: 1px solid #cccccc;
+      padding: 10px;
+      resize: none;
+    }
+
+    .form-button {
+      width: 100%;
+      height: 40px;
+      background-color: #333333;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Connect with Alumni</h1>
+  <div class="container">
+    <div class="question">
+      <div class="question-header">
+        <img src="images/stu1.jpg" class="question-avatar">
+        <div class="question-name">Nakul Dagur</div>
+        <div class="question-date">02 Dec 2023</div>
+      </div>
+      <div class="question-body">
+        How can I prepare for the entrance exam of XYZ University?
+      </div>
+    </div>
+    <div class="answer">
+      <div class="answer-header">
+        <img src="images/rajesh.jpg" class="answer-avatar">
+        <div class="answer-name">Rajesh Kumar</div>
+        <div class="answer-date">08 Dec 2023</div>
+      </div>
+      <div class="answer-body">
+        Hi Nakul dagur, I graduated from XYZ University last year. The entrance exam is not very difficult, but you need to study the basics of math, physics, and chemistry. You can also refer to some previous year papers and sample questions on the university website. Good luck!
+      </div>
+    </div>
+    <div class="question">
+        <div class="question-header">
+          <img src="images/stu2.png" class="question-avatar">
+          <div class="question-name">Vivek Chaudhary</div>
+          <div class="question-date">04 Dec 2023</div>
+        </div>
+        <div class="question-body">
+            What activities did you participate in and how did they help you after college?
+        </div>
+      </div>
+      <div class="answer">
+        <div class="answer-header">
+          <img src="images/neha.jpg" class="answer-avatar">
+          <div class="answer-name">Neha chaudhary</div>
+          <div class="answer-date">06 Dec 2023</div>
+        </div>
+        <div class="answer-body">
+          Hi Vivek,  I was an active member of some social clubs like Rotaract clubs and I have represented my college at the district level which helped me to meet new people and gain skills like public speaking, leadership, discipline, teamwork and also time management.
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-header">
+          <img src="images/stu3.png" class="question-avatar">
+          <div class="question-name">Vinit Gaur</div>
+          <div class="question-date">01 Dec 2023</div>
+        </div>
+        <div class="question-body">
+            What did you major in and what did you think of the program?
+        </div>
+      </div>
+      <div class="answer">
+        <div class="answer-header">
+          <img src="images/ankit.jpg" class="answer-avatar">
+          <div class="answer-name">Ankit</div>
+          <div class="answer-date">04 Dec 2023</div>
+        </div>
+        <div class="answer-body">
+          Hi Vinit, It plays a crucial role in decision-making, problem-solving, and innovation across diverse industries. Data scientists analyze data, develop predictive models, and provide data-driven solutions to complex problems, making it a field of immense importance in the digital age.
+        </div>
+      </div>
+      <div class="question">
+      <div class="question-header">
+        <img src="images/stu4.jpg" class="question-avatar">
+        <div class="question-name">Nensi Varshney</div>
+        <div class="question-date">07 Dec 2023</div>
+      </div>
+      <div class="question-body">
+        What are the best courses to take in XYZ University for a career in data science?
+      </div>
+      <div class="question-reply">
+        <button class="question-reply-button">Reply</button>
+      </div>
+    </div>
+   
+    <div class="form">
+      <textarea class="form-input" placeholder="Write your question here..."></textarea>
+      <button class="form-button">Submit</button>
+    </div>
+  </div>
+</body>
+</html>
