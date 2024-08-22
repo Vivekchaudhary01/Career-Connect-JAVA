@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<style>
+.list:hover{background-color:#3577AC;}
+ul.list{margin:10px;padding:20px; color:#CCCCCC; display:table;}
+ul.list li a{ font-size:16px; width:5px;padding:5px 5px;line-height:35px;background-color:#3577AC;;color:#FFFFFF; text-decoration:none;}
+ul.list li a:hover{background-color:#66ccff; display:table;}
+.look:hover{background-color:#3577AC;}
+.header
+{position:absolute;
+visibility:show;
+left:0px;
+top:0px;
+height:160px;
+width:1367px;
+background-color:#202020 ;
+}
+		
+</style>
+
+
+</head>
+
+<%@ include file="hrheader.jsp" %>
+
+<body style="background-image:url(images/white-lamborghini-wallpaper-1920x1200-1007077.jpg); background-attachment:fixed; ">
+<div style="height:130px; background-color:#000000;">
+<div style="float:left; color:#FF0000; font-family:Showcard Gothic; font-size:35px;">AUTOMOBILI LAMBORGHINI<br /><h4><center>HR DEPARTMENT<center></h4></div>
+<div style="float:right;"><img src="images/pranavjit_logo_render_medium_34ae61f68a377353e10da16293853d977d8f57ea.jpg" height="100px" width="200px" /></div>
+</div>
+	<div id="menu">
+	<ul id="main">
+		<li><a href="http://127.0.0.1:8080/ncts/home_page.jsp" id="anchor">HOME</a></li>
+		<li id="first">
+		<a href="http://127.0.0.1:8080/ncts/login_page.jsp" id="anchor">INVENTORY</a>
+		<!--<ul id="second">
+				<li><a href="http://127.0.0.1:8080/ncts/cus_registration.jsp" id="anchor">Registration</a></li>
+				<li><a href="http://127.0.0.1:8080/ncts/emp_registration.jsp" id="anchor">Registration</a></li>
+				
+				</ul>-->
+		</li>
+                		<li><a href="attendance.jsp" id="anchor">Attendance</a></li>
+
+		<li><a href="http://127.0.0.1:8080/ncts/About_Us.html" id="anchor">About</a></li>
+		<li><a href="http://127.0.0.1:8080/ncts/Contact_Us.html" id="anchor">Contact Us</a></li>
+	</ul>
+
+	</div>
+
+
+<br /><br /><br /><br /><br />
+<div style="width:100%;">
+<br /><br /><br />
+<div style="width:70%; float:right; ">
+
+<center><h1>VEHICLE REGISTRATION</h1></center><br><br>
+<table >
+<form action=http://localhost:8088/examples/vcr>
+<tr><td>Name</td><td><input type=text name=n1 /></td></tr>
+<tr><td>Number</td><td><input type=text name=n2 /></td></tr>
+<tr><td>Colour</td><td> <input type=text name=n3 /></td></tr>
+<tr><td>Mileage</td><td> <input type=text name=n4 /></td></tr>
+<tr><td>Rotations per Minute</td><td> <input type=text name=n5/></td></tr>
+<tr><td>Tank Capacity</td><td> <input type=text name=n6 /></td></tr>
+<tr><td>Car Type </td></tr>
+<tr><td><input type=radio name=type value=diesel>Diesel<br><br></td></tr>
+<tr><td><input type= radio name=type value=petrol>Petrol<br><br><br><br></td></tr>
+<tr><td>Engine Specifications<br><br></td></tr>
+<tr><td>Engine Model number</td><td><input type=text name=n7 /><br><br></td></tr>
+<tr><td>Engine Model name</td><td><input type=text name=n8 /><br><br></td></tr>
+<tr><td>Vehicle Body Specifications<br><br></td></tr>
+<tr><td>Length</td><td><input type=text name=n9 /><br><br></td></tr>
+<tr><td>Width</td><td><input type=text name=n10 /><br><br></td></tr>
+<tr><td>Height</td><td><input type=text name=n11 /><br><br></td></tr>
+<tr><td>Weight</td><td><input type=text name=n12 /><br><br></td></tr>
+<tr><td>Number of<br><br></td></tr>
+<tr><td>Seats</td><td>
+<br><select name=s>
+<option value=1 >1</option>
+<option value=2 >2</option>
+<option value=3 >3</option>
+<option value=4 >4</option>
+<option value=5 >5</option>
+<option value=6 >6</option>
+<option value=7 >7</option>
+<option value=8 >8</option>
+<option value=9 >9</option>
+<option value=10 >10</option>
+</select>
+<br><br></td></tr>
+<tr><td>Doors<br></td><td>
+<select name=d>
+<option value=1 >1</option>
+<option value=2 >2</option>
+<option value=3 >3</option>
+<option value=4 >4</option>
+<option value=5 >5</option>
+<option value=6 >6</option>
+<option value=7 >7</option>
+<option value=8 >8</option>
+<option value=9 >9</option>
+<option value=10 >10</option>
+</select><br><br></td></tr>
+<tr><td>Windows<br></td><td>
+<select name=w>
+<option value=1 >1</option>
+<option value=2 >2</option>
+<option value=3 >3</option>
+<option value=4 >4</option>
+<option value=5 >5</option>
+<option value=6 >6</option>
+<option value=7 >7</option>
+<option value=8 >8</option>
+<option value=9 >9</option>
+<option value=10 >10</option>
+</select>
+<br><br></td></tr>
+<tr><td>Brakes</td></tr>
+<br><tr><td>
+<tr><td><input type=checkbox value=disk_brake name=brake1 />Disk Brakes<br></td></tr>
+<tr><td><input type=checkbox value=power_brake name=brake2 />Power Brakes<br></td></tr>
+<tr><td><input type=checkbox value=hand_brake name=brake3 />Hand Brakes<br></td></tr>
+<br><br>
+<tr><td><input type=checkbox value=rear_camera name=cam />Rear Camera<br></td></tr>
+<tr><td><input type=checkbox value=rear_mirrors name=mirror />Rear view Mirrors<br></td></tr>
+
+<tr><td><input type=submit value=SUBMIT /></td></tr>
+</form>
+</table></center>
+</BODY>
+</HTML>
